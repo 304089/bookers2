@@ -11,14 +11,14 @@
           </div>
           <div class="form-group">
              <label for="user_image_id">Image</label>
-             <%= f.attachment_field :image %>
+             <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
           </div>
           <div class="form-group">
              <label for="user_introduction">Introduction</label>
              <%= f.text_area :introduction %>
           </div>
           <div class="form-group">
-             <input type="submit" name="commit" value="Update User" class="btn btn-secondary" data-disable-with="Update User">
+             <%= f.submit "変更を保存" %>
           </div>
         <% end %>
       </div>
