@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  
+
   def new
     @book = Book.new
   end
@@ -13,7 +13,6 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.all
-    
   end
 
   def show
@@ -21,11 +20,11 @@ class BooksController < ApplicationController
 
   def destroy
   end
-  
+
    private
 
   def book_params
-    params.require(:book).permit(:title,:body)
+    params.require(:book).permit(:title,:profile_image,:body)
   end
-  
+
 end
